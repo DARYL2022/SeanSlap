@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sean Slap</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="images/logo.png" class="logo">
+    </div>
+
+    <div class="tab-container">
+        <div class="tab active" onclick="openTab(event, 'tab1')">Jogos</div>
+        <div class="tab" onclick="openTab(event, 'tab2')">ROMs</div>
+        <div class="tab" onclick="openTab(event, 'tab3')">Emulatores</div>
+    </div>
+
+    <div id="tab1" class="tab-content active">
+        <div class="container">
+            <div class="item">
+                <img src="images/mine.png" class="icon" data-tooltip="Minecraft Bedrock 1.21.2.02 (839.65 Mb)">
+                <div class="leg">
+                    <a href="https://fir3.net/PnD5VfIM">Minecraft Bedrock 1.21.2.02(839.65 Mb)</a><br>
+                    <a href="https://fir3.net/oEI8eSDj">Minecraft Bedrock 1.21.2.02(246.49 Mb)</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrVNzn3aErkS59Ym_qhqbZYFd8laElFfxviQ&s" class="icon" data-tooltip="Terraria 1.4.4.9.5">
+                <div class="leg">
+                    <a href="https://fir3.net/Q8YwgdQay">Terraria 1.4.4.9.5</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/bloons.jpeg" class="icon" data-tooltip="Bloons TD 6 43.19">
+                <div class="leg">
+                    <a href="https://fir3.net/RXMwprwy7">Bloons TD 6 43.19</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/limbo.jpeg" class="icon" data-tooltip="Limbo 1.20">
+                <div class="leg">
+                    <a href="https://fir3.net/kx9Uix4uIM">Limbo 1.20</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/little.jpeg" class="icon" data-tooltip="LITTLE NIGHTMARES PT-BR">
+                <div class="leg">
+                    <a href="https://fir3.net/fJyiv2u0">LITTLE NIGHTMARES PT-BR</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/deadcells.jpeg" class="icon" data-tooltip="Dead Cells">
+                <div class="leg">
+                    <a href="https://fir3.net/woOogFQ">Dead Cells</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/polybridge.jpeg" class="icon" data-tooltip="Poly Bridge">
+                <div class="leg">
+                    <a href="https://fir3.net/B4RZQbkGEs">Poly Bridge</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tab2" class="tab-content">
+        <div class="container">
+            <div class="item">
+                <img src="images/naruto.jpg" class="icon" data-tooltip="NARUTO ULTIMATE NINJA HEROS 2">
+                <div class="leg">
+                    <a href="https://fir3.net/JgWa1k4Fk">NARUTO ULTIMATE NINJA HEROS 2(PSP)</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/dragonball2.jpg" class="icon" data-tooltip="Dragon Ball Z - Shin Budokai 2">
+                <div class="leg">
+                    <a href="https://fir3.net/aFks4wBV1u">Dragon Ball Z - Shin Budokai 2(PSP)</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/crash.jpg" class="icon" data-tooltip="Crash of the Titans">
+                <div class="leg">
+                    <a href="https://fir3.net/avgeP83">Crash of the Titans(PSP)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tab3" class="tab-content">
+        <div class="container">
+            <div class="item">
+                <img src="images/myboy.jpeg" class="icon" data-tooltip="My boy! 2.0.6">
+                <div class="leg">
+                    <a href="https://fir3.net/D1ePHe">My boy! 2.0.6</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/ppsspp.jpeg" class="icon" data-tooltip="PPSSPP Gold 1.17.1">
+                <div class="leg">
+                    <a href="https://fir3.net/B0G7PTRSm">PPSSPP Gold 1.17.1</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="credits">
+        <div class="credits-container">
+            <p>© 2024 Sean Slap. Todos os direitos reservados.</p>
+            <p>
+                <a href="mailto:seuemail@example.com">Contato</a> |
+                <a href="https://linkedin.com/in/seuperfil" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/seuperfil" target="_blank">GitHub</a>
+            </p>
+            <p>Design por <a href="https://seusite.com" target="_blank">DARYL2022</a></p>
+        </div>
+    </footer>
+    
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            var activeTab = document.getElementById(tabName);
+            activeTab.style.display = "block";
+            activeTab.classList.add("active");
+            evt.currentTarget.classList.add("active");
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://t3.ftcdn.net/jpg/02/11/82/22/360_F_211822237_hdBkcryk9Ttcb7vJlB69hnwjpwSKMWXu.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Adicionada essa linha */
+    min-height: 100vh; /* Garante altura mínima para o corpo */
+    display: flex;
+    align-items: center; /* Alinha itens no topo */
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden; /* Impede rolagem horizontal se necessário */
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px; /* Ajuste a margem conforme necessário */
+}
+
+.logo {
+    max-width: 300px;
+    height: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.icon {
+    max-width: 80px;
+    height: auto;
+}
+
+.leg {
+    color: rgba(255, 87, 51, 0.8); /* Altere para a cor desejada com 80% de opacidade */
+    font-size: 14px;
+    text-align: left;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    background-color: #2F5C82;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+    background-color: #1c3b55;
+}
+
+.tab.active {
+    background-color: #244b6b;
+}
+
+.tab-content {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.466);
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 400px; /* Define uma altura mínima para as abas */
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.credits {
+    background-color: #244b6b; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto */
+    text-align: center;
+    padding: 20px 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.credits-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.credits a {
+    color: rgba(255, 255, 255, 0.8); /* Cor dos links */
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.credits a:hover {
+    color: rgba(255, 255, 255, 1); /* Cor dos links ao passar o mouse */
+}
