@@ -64,6 +64,34 @@
                 <img src="images/crash.jpg" class="icon" data-tooltip="Crash of the Titans">
                     <a href="https://fir3.net/avgeP83" class="test">Crash of the Titans(PSP)</a>
             </div>
+            <div class="item">
+                <img src="images/ghostrider.jpg" class="icon" data-tooltip="Ghostrider">
+                    <a href="https://fir3.net/Og5wpa" class="test">Ghost Rider(PSP)</a>
+            </div>
+            <div class="item">
+                <img src="images/pokemonplatinum.jpeg" class="icon" data-tooltip="Pokemon: Platinum Version">
+                    <a href="https://fir3.net/GFZhN9" class="test">Pokemon: Platinum Version(NDS)</a>
+            </div>
+            <div class="item">
+                <img src="images/newsuperbariobros.jpeg" class="icon" data-tooltip="New Super Mario Bros.">
+                    <a href="https://fir3.net/8PBpS" class="test">New Super Mario Bros.(NDS)</a>
+            </div>
+            <div class="item">
+                <img src="images/mariokart.jpeg" class="icon" data-tooltip="Mario Kart">
+                    <a href="https://fir3.net/NsFo" class="test">Mario Kart(NDS)</a>
+            </div>
+            <div class="item">
+                <img src="images/pokemonwhiteversion2.jpeg" class="icon" data-tooltip="Pokemon: White Version 2">
+                    <a href="https://fir3.net/mSPNV" class="test">Pokemon: White Version 2(NDS)</a>
+            </div>
+            <div class="item">
+                <img src="images/marioparty.jpeg" class="icon" data-tooltip="Mario Party">
+                    <a href="https://fir3.net/Cz24k4" class="test">Mario Party(NDS)</a>
+            </div>
+            <div class="item">
+                <img src="images/plantsz.jpeg" class="icon" data-tooltip="Plants vs. Zombies">
+                    <a href="https://fir3.net/sf3PhRnTXU" class="test">Plants vs. Zombies(NDS)</a>
+            </div>
         </div>
     </div>
 
@@ -108,6 +136,16 @@
             activeTab.style.display = "block";
             activeTab.classList.add("active");
             evt.currentTarget.classList.add("active");
+
+            document.addEventListener('wheel', function(e) {
+                if (e.ctrlKey) {
+                    e.preventDefault();
+                }
+            }, { passive: false });
+
+            document.addEventListener('gesturestart', function(e) {
+                e.preventDefault();
+            });
 
         }
     </script>
